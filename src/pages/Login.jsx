@@ -12,7 +12,7 @@ export default function Login({ onSwitch, onLogin }) {
     setError("");
     setLoading(true);
     try {
-      const data = await apiRequest("/api/auth/login", {
+     const data = await apiRequest("/auth/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
       });
