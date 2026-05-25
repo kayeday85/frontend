@@ -15,7 +15,7 @@ export default function Register({ onSwitch }) {
     setSuccess("");
     setLoading(true);
     try {
-      await apiRequest("/api/auth/register", {
+     await apiRequest("/auth/register", {
         method: "POST",
         body: JSON.stringify({ name, email, password }),
       });
